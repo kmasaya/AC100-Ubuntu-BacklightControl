@@ -13,7 +13,7 @@ brightness_max = 255
 brightness_min = 10
 brightness_deep_min = 0
 
-if len( sys.argv) &gt; 1 and sys.argv[1] == "--deep":
+if len( sys.argv) > 1 and sys.argv[1] == "--deep":
     brightness_min = brightness_deep_min
 
 
@@ -45,7 +45,7 @@ class Brightness:
         self.menu_file_quit.connect( "activate", self.application_end)
 
         self.label_message = gtk.Label()
-        self.label_message.set_markup( "&lt;b&gt;Brightness&lt;/b&gt;")
+        self.label_message.set_markup( "<b>Brightness</b>")
 
         self.scale_brightness = gtk.HScale()
         self.scale_brightness.set_digits( 0)
